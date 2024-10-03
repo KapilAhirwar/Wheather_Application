@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="iindex.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h1 class="heading">WEATHER APP</h1>
+            <div class="detect-loc">
+                <span id="yourloc" class="your">Your Weather</span>
+                <span id="selectloc" class="search">Search Weather</span>
+            </div>
+
+            <div class="holeContain">
+               
+                <!-- <img src="heater app/img/cloud.png" alt=""> -->
+
+                <div class="city-flag">
+                    <span id="cityName" class="city"></span>
+                    <span class="flag">india</span>
+                </div>
+                <span class="haze"><span class="haze" id="temp"></span><sup> o</sup>C/ <span id="maxtmp"></span><sup> o</sup>C</span>
+                <span class="haze-img" ><div class="w-img"><img id="wImg" src="/wheater app/img/clear.png" class="haze-img-1" alt=""></div><span id="disc"></span></span>
+                <div class="show-haze"><span class="show-haze" id="demo1"></span>:<span class="show-haze" id="demo"></span></div>
+                <div class="contain-info">
+                    <div class="weather-show-1 show-1">
+                        <!-- <img src="img/wind-icon-png-8.jpg" alt=""> -->
+                        <div class="name-wather">WINDSPEED</div>
+                        <div class="speed"><span class="speed" id="windspeed"></span> m/s</div>
+                    </div>
+                    <div class="weather-show-2 show-1">
+                        <!-- <img src="img/humdity.png" alt=""> -->
+                        <div class="name-wather">HUMIDITY</div>
+                        <div class="speed"><span class="speed" id="humidity"></span>%</div>
+                    </div>
+                    <div class="weather-show-3 show-1">
+                        <!-- <img src="img/cloud-icon.png" alt=""> -->
+                        <div class="name-wather">CLOUDS</div>
+                        <div class="speed"><span class="speed" id="cloud"></span>%</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="grand_access">
+                <img src="img/535137.png" class="location" alt="">
+                <div class="loc-head">Grant Location Access</div>
+                <div class="loc-head-2">Allow Access To Get Weather Information</div>
+                <button class="loc-access-btn" id="get-location">GRANT ACCESS</button>
+            </div>
+
+
+            <div id="srchBox" class="seacrh-bar">
+                <input type="text" id="search" class="srch" placeholder="Search For City">
+                <div id="click-icon" class="icon-src">
+                    <img src="img/icons8-search-150.png" class="search-icon"  alt="">
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+
+    
+    <script type="module" src="index.js"></script>
+</body>
+</html>

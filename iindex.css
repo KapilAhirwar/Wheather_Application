@@ -1,0 +1,245 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.wrapper{
+    height: 100vh;
+    background: linear-gradient(to right, #373b3f, #294a4a, #41494a);
+    
+}
+.container{
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    
+}
+.detect-loc{
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.holeContain{
+    display: flex;
+    margin-top: 3rem;
+    justify-content: center;
+    flex-direction: column;
+    scale: 0;
+    align-items: center;
+}
+
+.active{
+    background-color: rgba(182, 182, 182, 0.356);
+    padding: 1.5px;
+    width: 160px;
+    text-align: center;
+    border-radius:5px ;
+}
+.heading{
+    font-size: 2.5rem;
+}
+.loc{
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.city-flag{
+    margin-top: 1rem;
+}
+.city{
+    font-weight: 600;
+    font-size: 2.5rem;
+
+}
+.haze{
+    margin-top: 0.7rem;
+    font-size: 1.6rem;
+}
+.haze-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid; */
+    padding: 0px;
+    height: 170px;
+
+}
+.w-img{
+    width: 120px;
+    /* border: 2px solid; */
+    overflow: hidden;
+    height: 90px;
+}
+.haze-pic{
+    width: 60px;
+}
+.haze-img-1{
+    width: 160px;
+    
+}
+#disc{
+    font-size: 2rem;
+}
+.show-haze{
+    /* margin-top: 0.5rem; */
+    font-size: 3rem;
+    font-weight: 600;
+}
+.contain-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 600px;
+    margin-top: 1rem;
+    justify-content: baseline;
+}
+.show-1{
+    background-color: rgb(170, 166, 166);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 190px;
+    height: 120px;
+    gap: 0.3rem;
+}
+
+.name-wather{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.speed{
+    font-size: 1.2rem;
+    font-weight: 600;
+
+}
+.weather-cate{
+    width: 50px;
+}
+
+
+/* get-location */
+
+.grand_access{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    scale: 0;
+    display: none;
+}
+
+.location{
+    margin-top: 4rem;
+    width: 100px;
+}
+.loc-head{
+    font-size: 2rem;
+    font-weight: lighter;
+    margin-top: 1.5rem;
+    font-weight: 600;
+}
+.loc-head-2{
+    font-size: 1rem;
+    font-weight: lighter;
+    margin-top: 0.3rem;
+}
+.loc-access-btn{
+    margin-top: 1.5rem;
+    border: none;
+    font-size: 1.01rem;
+    width: 190px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    color: aliceblue;
+    text-align: center;
+    border-radius: 4px;
+    font-weight: lighter;
+    background-color: rgba(213, 213, 213, 0.258);
+    cursor: pointer;
+}
+
+
+/* search-bar */
+
+
+.seacrh-bar{
+    /* border: 2px solid; */
+    margin-top: -15rem;
+    width: 570px;
+    display: flex;
+    gap: 0.5rem;
+    scale: 0;
+    position: absolute;
+    
+}
+.srch{
+    width: 90%;
+    height: 40px;
+    border: none;
+    padding: 15px;
+    appearance: none;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    background-color: rgba(200, 200, 198, 0.296);
+
+}
+.icon-src{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: rgba(200, 200, 198, 0.296);
+}
+.search-icon{
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    font-weight: bold;
+
+
+}
+
+
+
+/* ----------------- javaScript-css ---------------------- */
+
+.visible {
+    scale: 1;
+}
+.show{
+    scale: 1;
+}
+
+
+
+.hidden {
+    display: none;
+}
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Other CSS for styles */
+.city-flag, .contain-info, .detect-loc {
+    margin-bottom: 15px;
+}
